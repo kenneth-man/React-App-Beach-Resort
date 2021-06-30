@@ -4,8 +4,8 @@ A react project to use context api with react hooks, by implementing a holiday r
 
 Video demo: https://drive.google.com/file/d/1cYVoa_HlNKPLKRJwYdUI-5xzFXOTqbdS/view?usp=sharing
 
-![Alt text](./res/sample1.png?raw=true "Home Screen")
+![Alt text](./res/sample1.png "Home Screen")
 
-![Alt text](./res/sample2.png?raw=true "Room Search Screen")
+![Alt text](./res/sample2.png "Room Search Screen")
 
-![Alt text](./res/sample2.png?raw=true "About Screen")
+![Alt text](./res/sample2.png "About Screen")
