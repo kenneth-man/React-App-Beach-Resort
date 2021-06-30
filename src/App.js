@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import Navbar from './components/Navbar.js';
+import Home from './components/Home.js';
+import About from './components/About.js';
+import RoomPage from './components/RoomPage.js';
+import RoomPageSingle from './components/RoomPageSingle.js';
+import Testimonials from './components/Testimonials.js';
+import ContextProvider from './Context.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ContextProvider>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar/>
+
+          <Switch>
+            <Route exact path='/' component={Home}/>
+
+            <Route exact path='/About' component={About}/>
+
+            <Route exact path='/RoomPage' component={RoomPage}/>
+
+            <Route exact path='/Testimonials' component={Testimonials}/>
+
+            <Route path='/:room' component={RoomPageSingle}/>
+          </Switch>
+        </div>
+      </BrowserRouter>
+    </ContextProvider>
   );
 }
 

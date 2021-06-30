@@ -1,0 +1,26 @@
+import home from './res/home.jpg';
+import home2 from './res/home2.jpg';
+import about from './res/about.jpg';
+import about2 from './res/about2.jpg';
+import about3 from './res/about3.jpg';
+import room1 from './res/room-1.jpg';
+import room2 from './res/room-2.jpg';
+import room3 from './res/room-3.jpg';
+import room4 from './res/room-4.jpg';
+import room5 from './res/room-5.jpg';
+import room6 from './res/room-6.jpg';
+import room7 from './res/room-7.jpg';
+import room8 from './res/room-8.jpg';
+import room9 from './res/room-9.jpg';
+import room10 from './res/room-10.jpg';
+import room11 from './res/room-11.jpg';
+import room12 from './res/room-12.jpg';
+import iconGlobe from './res/SVG/globe.svg';
+import iconLanguage from './res/SVG/language.svg';
+import iconMap from './res/SVG/map.svg';
+import iconAward from './res/SVG/price-ribbon.svg';
+
+export const homeImages = [home, home2];
+export const aboutImages = [about, about2, about3];
+export const roomImages = [room1, room2, room3, room4, room5, room6, room7, room8, room9, room10, room11, room12];
+export const homeIcons = [iconGlobe, iconLanguage, iconMap, iconAward];
